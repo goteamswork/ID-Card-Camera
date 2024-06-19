@@ -37,7 +37,7 @@ public class ObjectDetectionViewController: UIViewController, CardDetectionSessi
             imageName = "torch_off"
         }
         self.sessionHandler.toggleTorch(on: torchOn)
-        self.torchImageView.image = UIImage(named: imageName, in: Bundle(for: type(of: self)), compatibleWith: nil)
+        self.torchImageView.image = UIImage(named: imageName, in: Bundle.module, compatibleWith: nil)
     }
 
     override public func viewDidLoad() {
