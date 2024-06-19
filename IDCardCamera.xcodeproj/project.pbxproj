@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,6 +38,7 @@
 		3B7AC0E02742B05B004732A6 /* IDCardCameraResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B7AC0D52742AFE9004732A6 /* IDCardCameraResources.bundle */; };
 		3BBD4C8F274273E300A3B5D8 /* IDCardCamera.docc in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD4C8E274273E300A3B5D8 /* IDCardCamera.docc */; };
 		3BBD4C972742903200A3B5D8 /* AAMVABarcodeParser in Frameworks */ = {isa = PBXBuildFile; productRef = 3BBD4C962742903200A3B5D8 /* AAMVABarcodeParser */; };
+		BD445A712C22D8CF00F0F057 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FF9AE23A19EDB00156A59 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -341,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD445A712C22D8CF00F0F057 /* Media.xcassets in Resources */,
 				3B7AC0E02742B05B004732A6 /* IDCardCameraResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
