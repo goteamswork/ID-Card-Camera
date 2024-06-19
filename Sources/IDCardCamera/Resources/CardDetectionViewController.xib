@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,10 +36,10 @@
                     </constraints>
                 </view>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VTX-lS-DQM">
-                    <rect key="frame" x="99.333333333333329" y="383" width="176.33333333333337" height="46"/>
+                    <rect key="frame" x="91.000000000000014" y="381.33333333333331" width="193.33333333333337" height="49.666666666666686"/>
                     <subviews>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flip your card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf9-Y3-EQy">
-                            <rect key="frame" x="16" y="8" width="144.33333333333334" height="30"/>
+                            <rect key="frame" x="16" y="8" width="161.33333333333334" height="33.666666666666664"/>
                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -70,18 +71,18 @@
                     </connections>
                 </imageView>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abD-Qf-NGJ">
-                    <rect key="frame" x="0.0" y="44" width="375" height="78"/>
+                    <rect key="frame" x="0.0" y="50" width="375" height="78"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="78" id="XYr-bq-Lk4"/>
                     </constraints>
                     <items>
-                        <navigationItem title="ID Capture" prompt="Scan the front of your ID card" id="C2t-29-2OC">
+                        <navigationItem title="Capture License" id="C2t-29-2OC">
                             <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ucp-Ok-Q7P">
                                 <connections>
                                     <action selector="cancel" destination="-1" id="rlf-QN-ttj"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" title="Rotate card" id="dUa-hX-gPo">
+                            <barButtonItem key="rightBarButtonItem" title="Rotate" id="dUa-hX-gPo">
                                 <connections>
                                     <action selector="rotateCard" destination="-1" id="edH-IN-hCq"/>
                                 </connections>
