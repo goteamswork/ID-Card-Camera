@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,9 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardDetectionViewController" customModule="IDCardCameraResources" customModuleProvider="target">
             <connections>
                 <outlet property="cameraPreview" destination="pvV-Xq-kuM" id="vb9-D4-GNX"/>
+                <outlet property="cancelButton" destination="abD-Qf-NGJ" id="mxF-uy-QGZ"/>
                 <outlet property="cardOverlayView" destination="UOT-Ud-9mm" id="YIz-YB-Hh9"/>
                 <outlet property="flipCardView" destination="VTX-lS-DQM" id="A0q-h2-LRm"/>
                 <outlet property="navigationBar" destination="abD-Qf-NGJ" id="liG-Uo-84b"/>
+                <outlet property="rotateButton" destination="dUa-hX-gPo" id="6Ds-mE-GEs"/>
                 <outlet property="torchImageView" destination="DYY-Ay-gBQ" id="xQN-7j-NxB"/>
                 <outlet property="view" destination="iN0-l3-epB" id="sDc-nq-vfS"/>
             </connections>
@@ -82,11 +84,7 @@
                                     <action selector="cancel" destination="-1" id="rlf-QN-ttj"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" title="Rotate" id="dUa-hX-gPo">
-                                <connections>
-                                    <action selector="rotateCard" destination="-1" id="edH-IN-hCq"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Rotate" id="dUa-hX-gPo"/>
                             <connections>
                                 <outlet property="leftBarButtonItem" destination="Ucp-Ok-Q7P" id="DkX-mR-1UW"/>
                                 <outlet property="rightBarButtonItem" destination="dUa-hX-gPo" id="AaN-1c-lIc"/>

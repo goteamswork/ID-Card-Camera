@@ -43,12 +43,26 @@ public class BaseCardDetectionViewController: ObjectDetectionViewController {
     private var detectedCorners: [Bool] = [false, false, false, false]
     private var collectedImages: [(CGImage,Float)] = []
     
+    @IBOutlet weak var cancelButton: UINavigationBar!
+    @IBOutlet weak var rotateButton: UIBarButtonItem!
+    
+    public var cancelButtonTitle = "Cancel"
+    public var rotateButtonTitle = "Rotate"
+    public var navigationBarTitle = "Capture License"
+    
+    
     @objc public init() {
         super.init(nibName: "CardDetectionViewController", bundle: Bundle.module)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configureUI() {
+        navigationBar.topItem?.title = navigationBarTitle
+        cancelButton.topItem?.title = cancelButtonTitle
+        rotateButton.title = rotateButtonTitle
     }
     
     @IBAction override func cancel() {
@@ -79,6 +93,8 @@ public class BaseCardDetectionViewController: ObjectDetectionViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+        
         self.cardOverlayView.addObserver(self, forKeyPath: "bounds", options: .new, context: &self.viewSizeObserverContext)
         let cardAspectRatioConstraint = NSLayoutConstraint(item: self.cardOverlayView!, attribute: .width, relatedBy: .equal, toItem: self.cardOverlayView!, attribute: .height, multiplier: self.cardAspectRatio, constant: 0)
         cardAspectRatioConstraint.identifier = "aspectRatio"
