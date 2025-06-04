@@ -43,7 +43,7 @@ public class BaseCardDetectionViewController: ObjectDetectionViewController {
     private var detectedCorners: [Bool] = [false, false, false, false]
     private var collectedImages: [(CGImage,Float)] = []
     
-    @IBOutlet weak var cancelButton: UINavigationBar!
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var rotateButton: UIBarButtonItem!
     
     public var cancelButtonTitle = "Cancel"
@@ -61,7 +61,7 @@ public class BaseCardDetectionViewController: ObjectDetectionViewController {
     
     func configureUI() {
         navigationBar.topItem?.title = navigationBarTitle
-        cancelButton.topItem?.title = cancelButtonTitle
+        cancelButton.title = cancelButtonTitle
         rotateButton.title = rotateButtonTitle
     }
     
