@@ -148,7 +148,9 @@ public class ObjectDetectionViewController: UIViewController, CardDetectionSessi
     }
     
     @IBAction func cancel() {
-        dismiss()
+        DispatchQueue.main.async {
+            self.dismiss()
+        }
     }
     
     // MARK: -
